@@ -8,11 +8,13 @@ type FullscreenGifProps = {
 }
 
 export default function FullscreenGif({ src, alt = "Loading..." }: FullscreenGifProps) {
-  return (
+  const basePath = process.env.NODE_ENV === "production" ? "/me" : "";
+
+    return (
     <div className="fixed inset-0 w-screen h-screen overflow-hidden bg-black">
       
       <Image
-        src={src}
+        src={`${basePath}${src}`}
         alt={alt}
         fill
         priority
