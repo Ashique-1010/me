@@ -9,8 +9,7 @@
     "build": "next build",
     "start-prod": "next start",
     "lint": "eslint",
-    "export": "next export",
-    "out": "next build && next export && touch ./out/.nojekyll",
+    "out": "next build && touch ./out/.nojekyll",
     "predeploy": "npm run out",
     "deploy": "gh-pages -d out --dotfiles"
   },

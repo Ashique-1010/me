@@ -16,6 +16,7 @@ export default function FullscreenGif({ src, alt = "Loading..." }: FullscreenGif
         alt={alt}
         fill
         priority
+        unoptimized
         className="object-contain "
       />
 

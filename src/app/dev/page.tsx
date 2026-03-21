@@ -1,4 +1,4 @@
-import DevHomePage from "@/pages/devHomePage";
+import DevHomePage from "@/homepages/devHomePage";
 
 
 export default function Home() {
