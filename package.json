@@ -2,16 +2,17 @@
   "name": "portash",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<Ashique-1010>.github.io/<me>",
+  "homepage": "https://Ashique-1010.github.io/me",
   "scripts": {
     "dev": "next dev",
+    "start": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start-prod": "next start",
     "lint": "eslint",
     "export": "next export",
     "out": "next build && next export && touch ./out/.nojekyll",
     "predeploy": "npm run out",
-    "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
