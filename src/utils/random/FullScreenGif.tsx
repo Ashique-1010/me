@@ -8,8 +8,9 @@ type FullscreenGifProps = {
 }
 
 export default function FullscreenGif({ src, alt = "Loading..." }: FullscreenGifProps) {
-  const basePath = process.env.NODE_ENV === "production" ? "/me" : "";
 
+    // const basePath = process.env.NODE_ENV === "production" ? "/me" : "";
+    const basePath = "/me"
     return (
     <div className="fixed inset-0 w-screen h-screen overflow-hidden bg-black">
       
